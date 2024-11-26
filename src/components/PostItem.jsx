@@ -10,7 +10,7 @@ export default function PostItem({ imgData }) {
         <div className="post-item">
             <img src={`../../src/assets/${imgData.path}`}></img>
             <div className="post-item-content">
-                <div className="post-name-date">
+                <div>
                     <h2>{imgData.name}</h2>
                     <p className="post-item-date">{formattedDate}</p>
                 </div>
