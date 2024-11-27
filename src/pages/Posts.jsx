@@ -2,12 +2,13 @@ import { Outlet, Link } from "react-router-dom"
 import Header from "../components/Header"
 
 // for now this data will only be locally. I need to make it better with http.
-import { imageData } from "../util/images"
+import { imageData } from "../util/posts"
 import PostItem from "../components/PostItem"
 
 export default function Posts() {
     return (
         <>
+            <Outlet></Outlet>
             <Header>
                 <Link to='/' className="nav-item">
                     <p>Home</p>

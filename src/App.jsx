@@ -1,26 +1,26 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom'
 
-import Home from './pages/Home'
 import Error from './pages/Error'
 import Posts from './pages/Posts'
-import RootLayout from './pages/RootLayout'
+// import RootLayout from './pages/RootLayout'
+import PostDetails from './pages/PostDetails'
 
 const router = createBrowserRouter([
     {
-        path:'/',
-        element: <RootLayout/>,
-        errorElement: <Error/>,
-        children: [
-            {
-                path:'/',
-                element: <Home/>
-            },
-            {
-                path:'/posts',
-                element: <Posts/>
-            }
-        ]
+        path: '/',
+        // element: <RootLayout />,
+        element: <Navigate to="/posts"></Navigate>,
+        errorElement: <Error />,
     },
+    {
+
+        path: '/posts',
+        element: <Posts />,
+    },
+    {
+        path: '/posts/:id',
+        element: <PostDetails />
+    }
 ]);
 
 function App() {

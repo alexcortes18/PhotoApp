@@ -15,11 +15,9 @@ export default function PostItem({ imgData }) {
                     <p className="post-item-date">{formattedDate}</p>
                 </div>
                 <p>
-                    {/* For now just to go Home */}
-                    <Link to="/" className="post-button">Go to Post</Link>
+                    <Link to={`/posts/${imgData.id}`} className="post-button">Go to Post</Link>
                 </p>
             </div>
-
         </div>
     );
 }
