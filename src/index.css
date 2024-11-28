@@ -60,12 +60,11 @@ body {
     flex-direction: column;
 } 
 
-/* 
 @media (max-width: 1200px) {
     .posts-list {
-        max-width: 70rem;
+        max-width: 50rem;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .post-item {
@@ -83,8 +82,7 @@ body {
     .post-item {
         width: auto;
     }
-} 
-*/
+}
 
 .post-item img{
     height: 250px;
