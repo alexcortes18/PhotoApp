@@ -43,6 +43,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 4rem;
+    padding: 0;
 }
 
 .post-item{
@@ -85,9 +86,9 @@ body {
 }
 
 .post-item img{
-    height: 250px;
+    height: 30vh;
     /* height: 100%; */
-    /* aspect-ratio: 16 / 9;  */
+    aspect-ratio: 16 / 9; 
     object-fit: cover;
     border-radius: 10px;
 }
